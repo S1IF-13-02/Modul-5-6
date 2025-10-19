@@ -3,15 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	var j, alas, tinggi, n int
-	var luas float64
+	var n int
+	fmt.Print("Masukan bilangan bulat: ")
 	fmt.Scan(&n)
-	
-	for j = 1; j <=n; j+=1 {
-	fmt.Scan(&alas, &tinggi)
-	
-	luas = 0.5 * float64(alas * tinggi)
-	
-	fmt.Println(luas)
+
+	total := 0
+	for i := 1; i <= n; i++ {
+		total = total + i
+
 	}
+	fmt.Println("Hasil penjumlahan dari 1 sampai", n, "adalah", total)
+
 }
